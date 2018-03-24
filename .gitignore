@@ -35,6 +35,3 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Vim plugins (already handled by Vundle)
-vim/bundle/

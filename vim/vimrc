@@ -6,9 +6,8 @@ set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/dotfiles/vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'christoomey/vim-sort-motion'
 Plugin 'christoomey/vim-system-copy'
@@ -112,4 +111,4 @@ set mouse=a
 set textwidth=130
 
 " dev - settings that help for code dev
-command MakeTags !ctags -R .
+command! MakeTags !ctags -R .
