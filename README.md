@@ -1,3 +1,3 @@
 # dotfiles
 
-write a symlinking script
+todo: write a symlinking script
