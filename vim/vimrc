@@ -25,6 +25,9 @@ Plugin 'vimoutliner/vimoutliner'
 Plugin 'vimwiki/vimwiki'
 call vundle#end()
 
+" vim built-in packages
+packadd! matchit
+
 " look and feel
 filetype plugin indent on
 syntax on
