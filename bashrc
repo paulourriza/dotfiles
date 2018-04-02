@@ -123,8 +123,3 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # default visual editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
-
-# load tmux if connected via ssh
-if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
-	tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
-fi
