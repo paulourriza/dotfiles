@@ -27,7 +27,9 @@ Plugin 'vimwiki/vimwiki'
 call vundle#end()
 
 " vim built-in packages
-packadd! matchit
+if v:version >= 800
+ 	packadd! matchit
+endif
 
 " look and feel
 filetype plugin indent on
