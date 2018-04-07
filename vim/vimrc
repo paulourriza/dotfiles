@@ -83,7 +83,8 @@ no <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 no <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 no <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
 no <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
-map Q gq
+" evaluate mathematical expression with =
+nn Q yt=f=a<space><C-r>=<C-r>"<CR><ESC>
 " vim training - unmap arrow keys
 no <down> <Nop>
 no <left> <Nop>
