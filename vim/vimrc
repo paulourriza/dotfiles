@@ -124,3 +124,6 @@ set textwidth=130
 
 " dev - settings that help for code dev
 command! MakeTags !ctags -R .
+
+" load in abbreviations (snippets)
+source ~/dotfiles/vim/abbreviations.vim
