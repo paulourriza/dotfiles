@@ -1,0 +1,31 @@
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Paulo Isagani Urriza
+#	email = pmurriza@marvell.com
+[user]
+	name = paulourriza
+	email = pmurriza@gmail.com
+[core]
+	autocrlf = true
+	preloadindex = true
+	fscache = true
+[gc]
+	auto = 256
+[diff]
+	tool = bc
+[difftool "bc"]
+	cmd = \"c:/program files/beyond compare 4/bcomp.exe\" "$(cygpath -w $LOCAL)" "$REMOTE"
+[difftool]
+	prompt = false
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	visual = !gitk
+[merge]
+	tool = meld
+[mergetool "meld"]
+	path = "C:/Program Files (x86)/Meld/Meld.exe"
