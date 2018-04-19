@@ -30,3 +30,5 @@
 	tool = meld
 [mergetool "meld"]
 	path = "C:/Program Files (x86)/Meld/Meld.exe"
+[credential]
+	helper = cache
