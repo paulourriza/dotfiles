@@ -25,6 +25,7 @@
 	unstage = reset HEAD --
 	last = log -1 HEAD
 	visual = !gitk
+	ls = log --oneline
 [merge]
 	tool = meld
 [mergetool "meld"]
