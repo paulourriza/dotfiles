@@ -17,10 +17,12 @@ alias l='ls -C'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 # these aliases are invoked automatically by .bashrc
+alias dcrun='docker-compose -f ~/mediaserver/docker-compose.yml '
+alias dclogs='docker-compose -f ~/mediaserver/docker-compose.yml logs -tf --tail="50" '
 alias clrdocker='docker rm $(docker ps -a -q -f status=exited)'
-alias dockpull='docker-compose pull'
-alias dockup='docker-compose up -d --remove-orphans'
-alias dockdown='docker-compose down'
+alias dockpull='dcrun pull'
+alias dockup='dcrun up -d --remove-orphans'
+alias dockdown='dcrun down'
 alias tmux='tmux -u'
 # control cd behavior
 alias ..='cd ..'
