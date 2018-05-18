@@ -24,6 +24,7 @@ alias dockpull='dcrun pull'
 alias dockup='dcrun up -d --remove-orphans'
 alias dockdown='dcrun down'
 alias tmux='tmux -u'
+alias r='ranger'
 # control cd behavior
 alias ..='cd ..'
 alias ...='cd ../../'
