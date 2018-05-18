@@ -6,7 +6,7 @@
 	name = paulourriza
 	email = pmurriza@gmail.com
 [core]
-	autocrlf = true
+	autocrlf = false
 	preloadindex = true
 	fscache = true
 [gc]
