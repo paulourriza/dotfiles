@@ -12,7 +12,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'christoomey/vim-sort-motion'
 Plugin 'christoomey/vim-system-copy'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'lervag/vimtex'
+" Plugin 'lervag/vimtex'
 Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-smooth-scroll'
 Plugin 'tpope/vim-commentary'
@@ -28,7 +28,7 @@ call vundle#end()
 
 " vim built-in packages
 if v:version >= 800
- 	packadd! matchit
+	packadd! matchit
 endif
 
 " look and feel
@@ -70,13 +70,14 @@ set clipboard=
 
 " key remaps
 ino jk <ESC>
-let mapleader=","
+let mapleader = ";"
 nn <Enter> o<ESC>
 nn <S-Enter> O<ESC>
 nn <C-e> 5<C-e>
 nn <C-y> 5<C-y>
 nn <leader>c :%s/\s\+$//e<CR>
 map <C-n> :NERDTreeToggle<CR>
+nn <leader>n :NERDTreeFocus<CR>
 nn <F5> "=strftime("%c")<CR>P
 ino <F5> <C-R>=strftime("%c")<CR>
 no <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
@@ -94,6 +95,10 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 ino <up> <Nop>
+" NOW marker
+nn <leader>m mNi#NOW#<SPACE><ESC>
+" remove trailing whitespace
+nn <leader>dw :%s/\s\+$//e<CR>
 
 " allow repeated action on visual-lines
 vno . :norm.<CR>
