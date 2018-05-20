@@ -97,9 +97,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # load aliases from bash
 source ~/.bash_aliases
 
-# vim mode
-bindkey -v
-
 [ -e ~/.dircolors ] && eval $(dircolors -b ~/.dircolors) || 
 	    eval $(dircolors -b)
 
