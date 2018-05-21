@@ -78,7 +78,7 @@ nn <C-y> 5<C-y>
 nn <leader>c :%s/\s\+$//e<CR>
 map <C-n> :NERDTreeToggle<CR>
 nn <leader>n :NERDTreeFocus<CR>
-nn <F5> "=strftime("%c")<CR>P
+nn <F5> "=strftime("%a %b %d %T %Y")<CR>P
 ino <F5> <C-R>=strftime("%c")<CR>
 no <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 no <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
